@@ -1,24 +1,30 @@
 <form class="form-horizontal">
     <h4>General</h4>
     <fieldset>
-        
-
-    </fieldset>
-
-    <div data-bind="css: { disabled: !ownSettings.enableCustomization() }">
-        <h4>Customization</h4>
-        <div data-bind="foreach: ownSettings.color">
-            <div class="control-group">
-                <label class="control-label">Navbar</label>
-                <div class="controls">
-                    <input type="color" class="input-mini" data-bind="value: value">
-                    <input type="text" class="input-mini" data-bind="value: value">
-                    <i data-bind="attr: { class: enabled() ? 'fa fa-check-square-o' : 'fa fa-square-o' }, click: $parent.onRuleToggle"></i>
+        <div data-bind="css: { disabled: !ownSettings.enableCustomization() }">
+            <h4>CSS code</h4>
+            <div data-bind="foreach: ownSettings.color">
+                <div class="control-group">
+                    <label class="control-label"></label>
+                    <div class="controls">
+                        <textarea type="color" class="input-mini" data-bind="value: value"></textarea>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
+    </fieldset>
 
+    <fieldset>
+        <div data-bind="css: { disabled: !ownSettings.enableCustomization() }">
+            <h4>JavaScript/jQuery code</h4>
+            <div data-bind="foreach: ownSettings.color">
+                <div class="control-group">
+                    <div class="controls">
+                        <textarea type="color" class="input-mini" data-bind="value: value"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
 
 </form>
