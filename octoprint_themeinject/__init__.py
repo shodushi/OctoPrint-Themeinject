@@ -82,7 +82,7 @@ class ThemeinjectPlugin(octoprint.plugin.StartupPlugin,
         # Plugin here. See https://github.com/foosel/OctoPrint/wiki/Plugin:-Software-Update
         # for details.
         return dict(
-            themeify=dict(
+            themeinject=dict(
                 displayName="Themeinject",
                 displayVersion=self._plugin_version,
 

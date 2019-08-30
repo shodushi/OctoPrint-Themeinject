@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const isProd = process.argv.indexOf("-p") > -1;
-const staticPath = path.resolve(__dirname, "octoprint_themeify/static");
+const staticPath = path.resolve(__dirname, "octoprint_themeinject/static");
 module.exports = {
     entry: [
         path.join(staticPath, "js", "themeinject.js"),
