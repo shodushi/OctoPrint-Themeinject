@@ -1,5 +1,5 @@
 /*
- * View model for OctoPrint-Themeify
+ * View model for OctoPrint-Themeinject
  *
  * Author: Birk Johansson
  * License: MIT
@@ -8,7 +8,7 @@
 $(function() {
     function ThemeinjectViewModel(parameters) {
         var self = this;
-        self.classId = 'themeify';
+        self.classId = 'themeinject';
         self.settings = parameters[0];
 
         self.ownSettings = {};
@@ -117,7 +117,7 @@ $(function() {
 
         self.onBeforeBinding = function() {
             self.settings = self.settings.settings;
-            self.ownSettings = self.settings.plugins.themeify;
+            self.ownSettings = self.settings.plugins.themeinject;
             self.customRules = self.ownSettings.customRules.extend({
                 rateLimit: 50,
             });
@@ -400,8 +400,8 @@ $(function() {
     }
 
     OCTOPRINT_VIEWMODELS.push([
-        ThemeifyViewModel,
+        ThemeinjectViewModel,
         ['settingsViewModel'],
-        ['#settings_plugin_themeify'],
+        ['#settings_plugin_themeinject'],
     ]);
 });

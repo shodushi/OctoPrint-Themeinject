@@ -1,4 +1,4 @@
 include README.md
-recursive-include octoprint_themeify/templates *
-recursive-include octoprint_themeify/translations *
-recursive-include octoprint_themeify/static *
+recursive-include octoprint_themeinject/templates *
+recursive-include octoprint_themeinject/translations *
+recursive-include octoprint_themeinject/static *
