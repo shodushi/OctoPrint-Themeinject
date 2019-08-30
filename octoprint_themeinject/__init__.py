@@ -88,12 +88,12 @@ class ThemeinjectPlugin(octoprint.plugin.StartupPlugin,
 
                 # version check: github repository
                 type="github_release",
-                user="birkbjo",
+                user="shodushi",
                 repo="OctoPrint-Themeinject",
                 current=self._plugin_version,
 
                 # update method: pip
-                pip="https://github.com/shodushi/OctoPrint-Themeinject/archive/{target_version}.zip"
+                pip="https://github.com/shodushi/OctoPrint-Themeinject/archive/master.zip"
             )
         )
 
