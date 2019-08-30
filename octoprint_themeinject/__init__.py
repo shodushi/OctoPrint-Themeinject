@@ -89,7 +89,7 @@ class ThemeinjectPlugin(octoprint.plugin.StartupPlugin,
                 # version check: github repository
                 type="github_release",
                 user="birkbjo",
-                repo="OctoPrint-Themeify",
+                repo="OctoPrint-Themeinject",
                 current=self._plugin_version,
 
                 # update method: pip
@@ -103,7 +103,7 @@ __plugin_name__ = "Themeinject"
 
 def __plugin_load__():
     global __plugin_implementation__
-    __plugin_implementation__ = ThemeifyPlugin()
+    __plugin_implementation__ = ThemeinjectPlugin()
 
     global __plugin_hooks__
     __plugin_hooks__ = {
