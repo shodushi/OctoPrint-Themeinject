@@ -1,0 +1,4 @@
+#settings_plugin_themeinject div.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
