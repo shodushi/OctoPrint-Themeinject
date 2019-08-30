@@ -5,11 +5,11 @@ const isProd = process.argv.indexOf("-p") > -1;
 const staticPath = path.resolve(__dirname, "octoprint_themeify/static");
 module.exports = {
     entry: [
-        path.join(staticPath, "js", "themeify.js"),
+        path.join(staticPath, "js", "themeinject.js"),
         path.join(staticPath, "less", "base.less")
     ],
     output: {
-        filename: "themeify.min.js",
+        filename: "themeinject.min.js",
         path: path.join(staticPath, "dist")
     },
     devtool: isProd ? 'false' : 'cheap-module-eval-source-map',
@@ -48,7 +48,7 @@ module.exports = {
             comments: false
         }),
         new ExtractTextPlugin({
-            filename: "../dist/themeify.min.css",
+            filename: "../dist/themeinject.min.css",
             disable: false,
             allChunks: true
         })

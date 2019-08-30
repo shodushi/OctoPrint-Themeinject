@@ -1,12 +1,12 @@
 {
-    "name": "Themeify",
+    "name": "Themeinject",
     "version": "1.2.0",
     "description": "A plugin to change the looks of OctoPrint",
     "license": "AGPL-3.0",
     "scripts": {
         "build": "webpack -p",
-        "clean": "rm -r octoprint_themeify/static/dist",
-        "clean-css": "rm octoprint_themeify/static/dist/themeify.min.css",
+        "clean": "rm -r octoprint_themeinject/static/dist",
+        "clean-css": "rm octoprint_themeinject/static/dist/themeinject.min.css",
         "watch": "webpack --watch"
     },
     "devDependencies": {
